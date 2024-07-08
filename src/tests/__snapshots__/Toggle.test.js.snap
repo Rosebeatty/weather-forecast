@@ -16,7 +16,7 @@ exports[`<ToggleSwitch /> renders without crashing 1`] = `
           class="react-toggle-track-check"
         >
           <p
-            class="sc-gEvDqW crcAmV"
+            class="sc-gEvDqW dIDmVc"
           >
             °C
           </p>
@@ -25,7 +25,7 @@ exports[`<ToggleSwitch /> renders without crashing 1`] = `
           class="react-toggle-track-x"
         >
           <p
-            class="sc-gEvDqW crcAmV"
+            class="sc-gEvDqW dIDmVc"
           >
             °F
           </p>
