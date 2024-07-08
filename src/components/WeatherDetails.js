@@ -98,7 +98,7 @@ function WeatherDetails({ destination, selectedResult, unit, isLocal }) {
         </MaxMin>
       </Card>
       <Grid>
-        {selectedResult && (
+        {(selectedResult || isLocal) && (
           <>
             <Box className="box-1">
               <h4>Sunrise</h4>
