@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToggleSwitch /> renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-aYaIB epznSp"
+    for="toggle"
+  >
+    <div
+      class="react-toggle"
+    >
+      <div
+        class="react-toggle-track"
+      >
+        <div
+          class="react-toggle-track-check"
+        >
+          <p
+            class="sc-gEvDqW crcAmV"
+          >
+            °C
+          </p>
+        </div>
+        <div
+          class="react-toggle-track-x"
+        >
+          <p
+            class="sc-gEvDqW crcAmV"
+          >
+            °F
+          </p>
+        </div>
+      </div>
+      <div
+        class="react-toggle-thumb"
+      />
+      <input
+        aria-label="No label"
+        class="react-toggle-screenreader-only"
+        data-testid="toggle"
+        id="toggle"
+        type="checkbox"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

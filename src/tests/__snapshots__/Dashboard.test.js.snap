@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard /> renders without crashing 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Dashboard
+    </h1>
+    <div
+      class="sc-jXbVAB ENxqO"
+      for="toggle"
+    >
+      <div
+        class="react-toggle react-toggle--checked"
+      >
+        <div
+          class="react-toggle-track"
+        >
+          <div
+            class="react-toggle-track-check"
+          >
+            <p
+              class="sc-dhKdPU iHtkx"
+            >
+              °C
+            </p>
+          </div>
+          <div
+            class="react-toggle-track-x"
+          >
+            <p
+              class="sc-dhKdPU iHtkx"
+            >
+              °F
+            </p>
+          </div>
+        </div>
+        <div
+          class="react-toggle-thumb"
+        />
+        <input
+          aria-label="No label"
+          checked=""
+          class="react-toggle-screenreader-only"
+          data-testid="toggle"
+          id="toggle"
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-eDPFhE eJcoVx"
+    >
+      <div
+        class="sc-gsFSjX bKuoSs"
+      >
+        <div
+          class="sc-imWZod kRiiPg"
+        >
+          <div
+            aria-busy="true"
+            aria-label="tail-spin-loading"
+            class="sc-aYaIB nSnSW"
+            data-testid="tail-spin-loading"
+            role="progressbar"
+          >
+            <svg
+              data-testid="tail-spin-svg"
+              height="80"
+              viewBox="0 0 38 38"
+              width="80"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <lineargradient
+                  id="a"
+                  x1="8.042%"
+                  x2="65.682%"
+                  y1="0%"
+                  y2="23.865%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="purple"
+                    stop-opacity="0"
+                  />
+                  <stop
+                    offset="63.146%"
+                    stop-color="purple"
+                    stop-opacity=".631"
+                  />
+                  <stop
+                    offset="100%"
+                    stop-color="purple"
+                  />
+                </lineargradient>
+              </defs>
+              <g
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  transform="translate(1 1)"
+                >
+                  <path
+                    d="M36 18c0-9.94-8.06-18-18-18"
+                    id="Oval-2"
+                    stroke="purple"
+                    stroke-width="2"
+                  >
+                    <animatetransform
+                      attributeName="transform"
+                      dur="0.9s"
+                      from="0 18 18"
+                      repeatCount="indefinite"
+                      to="360 18 18"
+                      type="rotate"
+                    />
+                  </path>
+                  <circle
+                    cx="36"
+                    cy="18"
+                    fill="#fff"
+                    r="1"
+                  >
+                    <animatetransform
+                      attributeName="transform"
+                      dur="0.9s"
+                      from="0 18 18"
+                      repeatCount="indefinite"
+                      to="360 18 18"
+                      type="rotate"
+                    />
+                  </circle>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-kpDprT oFLHV"
+      >
+        <div
+          class="sc-cwHqhk kMCbFI"
+        >
+          <label
+            class="sc-jlZhRR kiUyVY"
+            for="date"
+          >
+            Date:
+          </label>
+          <div>
+            <div
+              class="react-datepicker-wrapper"
+            >
+              <div
+                class="react-datepicker__input-container"
+              >
+                <input
+                  class="sc-dAlxHm oJzHo"
+                  placeholder="Pick a Date"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="sc-cwHqhk kMCbFI"
+          >
+            <label
+              class="sc-jlZhRR kiUyVY"
+              for="location"
+            >
+              Location:
+            </label>
+            <div
+              style="display: flex; flex-direction: column;"
+            >
+              <input
+                class="sc-dAlxHm oJzHo"
+                id="location"
+                placeholder="City, Town or Zip Code"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <p
+            style="font-weight: bold; padding: 1em 0px;"
+          >
+            OR
+          </p>
+          <div
+            class="sc-cwHqhk kMCbFI"
+          >
+            <label
+              class="sc-jlZhRR kiUyVY"
+              for="latitude"
+            >
+              Latitude: 
+              <span
+                style="font-size: 10px;"
+              >
+                (-90 to 90)
+              </span>
+            </label>
+            <input
+              class="sc-dAlxHm oJzHo"
+              id="latitude"
+              max="90"
+              min="-90"
+              placeholder="-5"
+              style="width: 100%;"
+              type="number"
+              value=""
+            />
+            <label
+              class="sc-jlZhRR kiUyVY"
+              for="longitude"
+            >
+              Longitude: 
+              <span
+                style="font-size: 10px;"
+              >
+                (-180 to 180)
+              </span>
+            </label>
+            <input
+              class="sc-dAlxHm oJzHo"
+              id="longitude"
+              max="180"
+              min="-180"
+              placeholder="10"
+              style="width: 100%;"
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+        <div>
+          <button
+            class="sc-jEABJj ePbAxF"
+            disabled=""
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-eldOKa bdUXFi"
+    >
+      <div
+        class="sc-fPXMhL cqsCCa"
+      >
+        <span>
+          Please allow location services in your browser settings to view local weather information
+        </span>
+        <button>
+          ok
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      9.18° long - 9.18° lat
+    </h1>
+    <h2
+      style="font-size: 16px;"
+    >
+      Monday July 8th 2024
+    </h2>
+    <div
+      class="sc-eqUzNf jjSnNo"
+    >
+      <h1
+        class="sc-dcJtft hprDHP"
+      >
+        <p
+          data-testid="unit"
+          id="unit"
+        >
+          58°F
+        </p>
+      </h1>
+      <div
+        class="sc-fqkwJk ldiSSK"
+      >
+        <p>
+          Min: 58°F
+        </p>
+        <p>
+          Max: 73°F
+        </p>
+      </div>
+    </div>
+    <div
+      class="sc-aYaIB bHPGlB"
+    >
+      <div
+        class="sc-gEvDqW eLaTiZ box-1"
+      >
+        <h4>
+          Wind Speed
+        </h4>
+        <p>
+          4.8 km/h
+        </p>
+      </div>
+      <div
+        class="sc-gEvDqW eLaTiZ box-2"
+      >
+        <h4>
+          Percipitation
+        </h4>
+        <p>
+          0.2 mm
+        </p>
+      </div>
+      <div
+        class="sc-gEvDqW eLaTiZ"
+      >
+        <h4>
+          Humidity
+        </h4>
+        <p>
+          99 %
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

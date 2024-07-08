@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BackButton /> renders 1`] = `
+<DocumentFragment>
+  <a
+    class="sc-aYaIB iOMfUn"
+    href="/"
+    id="back"
+  >
+    <img
+      alt="back icon"
+      src="https://img.icons8.com/material-sharp/96/000000/back--v1.png"
+      style="width: 40px;"
+    />
+  </a>
+</DocumentFragment>
+`;

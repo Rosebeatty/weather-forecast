@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardList /> renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gsFSjX bKuoSs"
+  >
+    <div
+      id="46&9.18"
+    >
+      <a
+        href="/weather/localWeather"
+        style="text-decoration: none; color: purple;"
+      >
+        <div
+          class="sc-kAycRU frRPlU"
+        >
+          <h3>
+            Local Weather
+          </h3>
+          <p
+            id="unit"
+          >
+            58°F
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
