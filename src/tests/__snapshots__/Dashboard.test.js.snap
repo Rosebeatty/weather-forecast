@@ -3,9 +3,6 @@
 exports[`<Dashboard /> renders without crashing 1`] = `
 <DocumentFragment>
   <div>
-    <h1>
-      Dashboard
-    </h1>
     <div
       class="sc-jXbVAB ENxqO"
       for="toggle"
@@ -20,7 +17,7 @@ exports[`<Dashboard /> renders without crashing 1`] = `
             class="react-toggle-track-check"
           >
             <p
-              class="sc-dhKdPU iHtkx"
+              class="sc-dhKdPU jalCOE"
             >
               °C
             </p>
@@ -29,7 +26,7 @@ exports[`<Dashboard /> renders without crashing 1`] = `
             class="react-toggle-track-x"
           >
             <p
-              class="sc-dhKdPU iHtkx"
+              class="sc-dhKdPU jalCOE"
             >
               °F
             </p>
@@ -49,8 +46,13 @@ exports[`<Dashboard /> renders without crashing 1`] = `
       </div>
     </div>
     <div
-      class="sc-eDPFhE eJcoVx"
+      class="sc-eDPFhE gMnhdW"
     >
+      <h1
+        style="padding: 1em 0px;"
+      >
+        Dashboard
+      </h1>
       <div
         class="sc-gsFSjX bKuoSs"
       >
@@ -148,7 +150,7 @@ exports[`<Dashboard /> renders without crashing 1`] = `
             class="sc-jlZhRR kiUyVY"
             for="date"
           >
-            Date:
+            Date*:
           </label>
           <div>
             <div
@@ -252,17 +254,23 @@ exports[`<Dashboard /> renders without crashing 1`] = `
       </div>
     </div>
     <div
-      class="sc-eldOKa bdUXFi"
+      class="sc-eldOKa lgoRFO"
     >
       <div
-        class="sc-fPXMhL cqsCCa"
+        class="sc-fPXMhL inNJhz"
       >
-        <span>
-          Please allow location services in your browser settings to view local weather information
+        <span
+          style="color: white;"
+        >
+          Please allow geolocation tracking in your browser settings to view local weather information
         </span>
-        <button>
-          ok
-        </button>
+        <div>
+          <button
+            class="sc-gFqAYk jZNrCd"
+          >
+            ok
+          </button>
+        </div>
       </div>
     </div>
   </div>

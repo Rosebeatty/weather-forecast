@@ -18,8 +18,8 @@ const Layout = styled.div`
 `;
 
 const PopupContainer = styled.div`
-  position: fixed:
-  background: rgba(0, 0, 0, 0.5):
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
   height: 100vh;
   width: 100vw;
   top: 0px;
@@ -29,9 +29,11 @@ const PopupContainer = styled.div`
 const Popup = styled.div`
   z-index: 10000;
   background-color: #212121;
-  backdrop-filter: blur(20px);
   border: purple;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
   top: 50%;
   left: 50%;
   width: 350px;
@@ -40,13 +42,28 @@ const Popup = styled.div`
   transform: translate(-50%, -50%);
 `;
 
+const OkButton = styled.button`
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: purple;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+
 function Dashboard() {
   const [locations, setLocations] = useState(null);
   const [error, setError] = useState(null);
   const [unit, setUnit] = useState(localStorage.getItem("toggle") === "false");
   const [hide, setHide] = useState(false);
   const [geolocation, setGeolocation] = useState(
-    localStorage.getItem("allow") === "true",
+    localStorage.getItem("allow") === "true"
   );
 
   const allowLocation = (isAllowed) => {
@@ -60,7 +77,7 @@ function Dashboard() {
         setLocations,
         setError,
         position.coords.latitude,
-        position.coords.longitude,
+        position.coords.longitude
       );
     });
   };
@@ -130,11 +147,13 @@ function Dashboard() {
       {!geolocation && !hide && (
         <PopupContainer>
           <Popup>
-            <span>
-              Please allow location services in your browser settings to view
+            <span style={{ color: "white" }}>
+              Please allow geolocation tracking in your browser settings to view
               local weather information
             </span>
-            <button onClick={() => setHide(true)}>ok</button>
+            <div>
+              <OkButton onClick={() => setHide(true)}>ok</OkButton>
+            </div>
           </Popup>
         </PopupContainer>
       )}

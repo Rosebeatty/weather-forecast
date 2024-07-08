@@ -117,7 +117,7 @@ function WeatherDetails({ destination, selectedResult, unit, isLocal }) {
           </p>
         </Box>
         <Box className="box-2">
-          <h4>Percipitation</h4>
+          <h4>Precipitation</h4>
           <p>
             {current.precipitation} {current_units.precipitation}
           </p>
