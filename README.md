@@ -2,14 +2,14 @@
 
 The Weather Forecast is a responsive mobile and desktop app which implementes the OpenMeteo API to enable users to search weather data by a location name or by coordinates. The app consists of two views: the dashboard for searching and the details page for displaying a detailed forecast. Additionally, if the user enables geolocation tracking within the browser, the app can automatically determine and display local weather forecast data.  
 
-I chose to use Styled Components for a quick and effective design implementation, however I would replace this with TailwindCSS or at least refactor the CSS to separate files if the app got any larger. I wrote simple tests with Jest & Enzyme and I would add to this with further integration & e2e tests. 
+I chose to use Styled Components for a quick and effective design implementation, however I would replace this with TailwindCSS or at least refactor the CSS to separate files if the app got any larger. I wrote simple tests with React Testing Library and I would add to this with further integration & e2e tests. 
 
 
 Main technologies:
 
 - React
 - Styled Components
-- Jest & Enzyme
+- React Testing Library
 - Axios
 - Prettier
 - OpenMeteo API
