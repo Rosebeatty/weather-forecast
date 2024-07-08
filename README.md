@@ -20,7 +20,7 @@ Improvements:
 
 - Add Typescript
 - Add Input validation messages
-- Improved Location search results
+- Improve location search dropdown results
 - Improve Design & Accessibilty
 - Weather Animations
 - More UI tests
