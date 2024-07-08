@@ -9,7 +9,7 @@ export const apiCallSearch = (name) => {
 export const apiCallLocation = async (long, lat) => {
   return axios
     .get(
-      `${process.env.REACT_APP_WEATHER_API_URL}?latitude=${lat}&longitude=${long}&current=temperature_2m,relative_humidity_2m,is_day,precipitation,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset&start_date=2024-07-08&end_date=2024-07-08&timezone=Europe/Rome`
+      `${process.env.REACT_APP_WEATHER_API_URL}?latitude=${lat}&longitude=${long}&current=temperature_2m,relative_humidity_2m,is_day,precipitation,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset&start_date=2024-07-08&end_date=2024-07-08&timezone=Europe/Rome`,
     )
     .then((response) => response.data);
 };

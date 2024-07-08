@@ -4,7 +4,7 @@ import { format } from "date-fns";
 export const searchLocation = async (setLocations, setError, locationName) => {
   try {
     const result = await axios.get(
-      `${process.env.REACT_APP_WEATHER_GEOAPI_URL}?name=${locationName}`
+      `${process.env.REACT_APP_WEATHER_GEOAPI_URL}?name=${locationName}`,
     );
     setLocations(result.data.results);
   } catch (err) {
@@ -17,7 +17,7 @@ export const getLocations = async (
   lat,
   long,
   startDate = new Date(),
-  timeZone
+  timeZone,
 ) => {
   let locations = [];
   try {
@@ -26,7 +26,7 @@ export const getLocations = async (
         timeZone || Intl.DateTimeFormat().resolvedOptions().timeZone || "GMT";
       const date = format(new Date(startDate), "yyyy-MM-dd");
       const current = await axios.get(
-        `${process.env.REACT_APP_WEATHER_API_URL}?latitude=${lat}&longitude=${long}&current=temperature_2m,relative_humidity_2m,is_day,precipitation,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset&start_date=${date}&end_date=${date}&timezone=${timezone}`
+        `${process.env.REACT_APP_WEATHER_API_URL}?latitude=${lat}&longitude=${long}&current=temperature_2m,relative_humidity_2m,is_day,precipitation,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset&start_date=${date}&end_date=${date}&timezone=${timezone}`,
       );
       locations.push(current.data);
     }

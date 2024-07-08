@@ -19,7 +19,7 @@ describe("<Dashboard />", () => {
     render(
       <MemoryRouter>
         <Dashboard />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
   });
 

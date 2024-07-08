@@ -46,7 +46,7 @@ function Dashboard() {
   const [unit, setUnit] = useState(localStorage.getItem("toggle") === "false");
   const [hide, setHide] = useState(false);
   const [geolocation, setGeolocation] = useState(
-    localStorage.getItem("allow") === "true"
+    localStorage.getItem("allow") === "true",
   );
 
   const allowLocation = (isAllowed) => {
@@ -60,7 +60,7 @@ function Dashboard() {
         setLocations,
         setError,
         position.coords.latitude,
-        position.coords.longitude
+        position.coords.longitude,
       );
     });
   };

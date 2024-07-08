@@ -10,7 +10,7 @@ describe("<BackButton />", () => {
     const renderResult = render(
       <Router>
         <BackButton />
-      </Router>
+      </Router>,
     );
     asFragment = renderResult.asFragment;
   });

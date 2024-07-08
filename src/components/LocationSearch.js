@@ -108,7 +108,7 @@ export const LocationSearch = ({ setLocations, setError }) => {
 
   const debouncedSearchLocation = useCallback(
     debounce(searchLocation, 500),
-    []
+    [],
   );
   const handleInputChange = (e) => {
     const locationValue = e.target.value;
@@ -154,7 +154,7 @@ export const LocationSearch = ({ setLocations, setError }) => {
       latitude,
       longitude,
       startDate,
-      timezone
+      timezone,
     );
     if (destination) {
       return navigate(`/weather/${selectedResult?.name || "newLocation"}`, {
@@ -168,7 +168,7 @@ export const LocationSearch = ({ setLocations, setError }) => {
       !Boolean(startDate) ||
       (!Boolean(selectedResult) && !Boolean(longitude)) ||
       !Boolean(latitude),
-    [startDate, selectedResult, longitude, latitude]
+    [startDate, selectedResult, longitude, latitude],
   );
 
   return (
@@ -209,7 +209,8 @@ export const LocationSearch = ({ setLocations, setError }) => {
                 {locations.map((location, index) => (
                   <DropdownItem
                     key={index}
-                    onClick={() => handleResultClick(location)}>
+                    onClick={() => handleResultClick(location)}
+                  >
                     {location?.name}, {location?.country}
                   </DropdownItem>
                 ))}
@@ -254,7 +255,8 @@ export const LocationSearch = ({ setLocations, setError }) => {
       <div>
         <SearchButton
           onClick={() => handleSearch(setLocations)}
-          disabled={isSearchButtonDisabled}>
+          disabled={isSearchButtonDisabled}
+        >
           Search
         </SearchButton>
       </div>

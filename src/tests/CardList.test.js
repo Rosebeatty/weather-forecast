@@ -15,7 +15,7 @@ describe("<CardList />", () => {
     render(
       <Router>
         <CardList {...mockProps} />
-      </Router>
+      </Router>,
     );
   });
 
@@ -23,7 +23,7 @@ describe("<CardList />", () => {
     const { asFragment } = render(
       <Router>
         <CardList {...mockProps} />
-      </Router>
+      </Router>,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -35,14 +35,14 @@ describe("<CardList />", () => {
 
   it("rounds decimals to whole numbers", () => {
     const unitElement = screen.getByText(
-      (content, element) => element.id === "unit"
+      (content, element) => element.id === "unit",
     );
     expect(unitElement.textContent).not.toContain(".");
   });
 
   it("converts Celsius to Fahrenheit", () => {
     const unitElement = screen.getByText(
-      (content, element) => element.id === "unit"
+      (content, element) => element.id === "unit",
     );
     const tempC = unitElement.textContent.split("°")[0];
     const tempF = fahrenheit(tempC);

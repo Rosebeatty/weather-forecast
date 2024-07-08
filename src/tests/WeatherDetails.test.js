@@ -15,7 +15,7 @@ beforeEach(() => {
 
 it("renders without crashing", () => {
   const { asFragment } = render(
-    <WeatherDetails destination={mockLocations[0]} unit={false} />
+    <WeatherDetails destination={mockLocations[0]} unit={false} />,
   );
   expect(asFragment()).toMatchSnapshot();
 });

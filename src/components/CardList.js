@@ -49,7 +49,8 @@ export const CardList = ({ locations, unit }) => (
                 pathname: `weather/localWeather`,
               }}
               state={{ destination, isLocal: true }}
-              style={{ textDecoration: "none", color: "purple" }}>
+              style={{ textDecoration: "none", color: "purple" }}
+            >
               <Card>
                 <h3>Local Weather</h3>
                 <p id="unit">

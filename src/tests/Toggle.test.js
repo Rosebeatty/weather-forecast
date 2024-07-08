@@ -13,7 +13,7 @@ describe("<ToggleSwitch />", () => {
 
   it("renders without crashing", () => {
     const { asFragment } = render(
-      <ToggleSwitch changeUnit={changeUnit} unit={unit} />
+      <ToggleSwitch changeUnit={changeUnit} unit={unit} />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -29,7 +29,7 @@ describe("<ToggleSwitch />", () => {
           unchecked: "°F",
         }}
         onChange={changeUnit}
-      />
+      />,
     );
 
     fireEvent.click(screen.getAllByRole("checkbox")[1], {

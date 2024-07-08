@@ -18,7 +18,7 @@ describe("<Location />", () => {
     render(
       <Router>
         <Location {...mockProps} />
-      </Router>
+      </Router>,
     );
   });
 
@@ -26,7 +26,7 @@ describe("<Location />", () => {
     const { asFragment } = render(
       <Router>
         <Location {...mockProps} />
-      </Router>
+      </Router>,
     );
     expect(asFragment()).toMatchSnapshot();
   });
